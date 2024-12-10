@@ -1,0 +1,27 @@
+
+<div class="table-container">
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Mobile Number</th>
+      <th>E-mail</th>
+  <th>Action</th>
+  <th>Action</th>
+
+    </tr>
+    <tr *ngFor=" let emp of empData">
+      <td>{{emp.name}}</td>
+      <td>{{emp.gender}}</td>
+      <td>{{emp.mobileNumber}}</td>
+      <td>{{emp.city}}</td>
+      <td><span (click)="edit(emp)">Edit</span></td>
+      <td><span (click)="delete(emp)">Delete</span> </td>
+    </tr>
+  </table>
+  <div style="text-align: center;" *ngIf="empData.length == 0">
+    <h1>List is Empty</h1>
+  </div>
+</div>
+
+

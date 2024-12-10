@@ -1,0 +1,61 @@
+{
+  "basicInfo": [
+    {
+      "name": "Balaji",
+      "firstName": "Balaji",
+      "lastName": "Balaji",
+      "gender": "4",
+      "mobileNumber": "07338825363",
+      "email": "balajiagniraj20@gmail.com",
+      "dob": "",
+      "state": "Tamil Nadu",
+      "city": "Chennai",
+      "profession": "1",
+      "category": "",
+      "panNo": "ENGPA0064R",
+      "aadhaarNo": "e",
+      "education": "b",
+      "degree": "c",
+      "university": "a.m jain",
+      "id": 1
+    },
+    {
+      "0": {
+        "name": "Balajissssssssssssss",
+        "firstName": "",
+        "lastName": "Balaji",
+        "gender": "",
+        "mobileNumber": "07338825363",
+        "email": "balajiagniraj20@gmail.com",
+        "dob": "",
+        "state": "Tamil Nadu",
+        "city": "Chennai",
+        "profession": "",
+        "category": "",
+        "panNo": "",
+        "aadhaarNo": "",
+        "education": "",
+        "degree": "",
+        "university": "",
+        "id": 3
+      },
+      "name": "Balajissssssss",
+      "firstName": "",
+      "lastName": "Balaji",
+      "gender": "",
+      "mobileNumber": "07338825363",
+      "email": "balajiagniraj20@gmail.com",
+      "dob": "",
+      "state": "Tamil Nadu",
+      "city": "Chennai",
+      "profession": "",
+      "category": "",
+      "panNo": "",
+      "aadhaarNo": "",
+      "education": "",
+      "degree": "",
+      "university": "",
+      "id": 3
+    }
+  ]
+}

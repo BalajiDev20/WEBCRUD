@@ -1,0 +1,23 @@
+.navbar{
+    /* width: 86%;
+    align-items: end;
+    background-color: aqua;
+    height: 160px;
+    float: right; */
+    background-color: rgb(95 95 95);
+    display: flex;
+    .hai-div{
+        padding: 14px 344px;;
+        font-family: emoji;
+        color: #e1e1e1;
+    }
+}
+
+
+/* .input-div{
+    width: 120%;
+    height: 36px;
+    border-radius: 5px;
+    border-color: rgb(228, 220, 220);
+    margin: 10px 0px 10px 0px;
+} */

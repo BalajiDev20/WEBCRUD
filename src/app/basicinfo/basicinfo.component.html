@@ -1,0 +1,252 @@
+<div class="add-basicInfo">
+
+  <form class="reactive-form" [formGroup]="EmployeeAddForm">
+    <h2>Basic Info</h2>
+
+    <div class="message">{{addProductmessage}}</div>
+
+    <!-- <div class="name-divs"> -->
+    <div class="input-field-div">
+
+      <div class="input-divs">
+
+        <div class="input-div">
+          Name
+          <input type="text" class="form-input" id="name" name="name" formControlName="name" placeholder="Mr/Mrs">
+        </div>
+
+        <div class="input-div">
+          First Name
+          <input type="text" class="form-input" id="firstName" name="firstName" formControlName="firstName"
+            placeholder="First Name">
+        </div>
+
+        <div class="input-div">
+          Last Name
+          <input type="text" class="form-input" id="lastName" name="lastName" formControlName="lastName"
+            placeholder="Last Name">
+        </div>
+      </div>
+
+      <div class="error-msg"
+      *ngIf="(EmployeeAddForm.get('name')?.invalid && EmployeeAddForm.get('name')?.touched)">
+      <div *ngIf="EmployeeAddForm.get('name')?.errors.required">Name is required.</div>
+    </div>
+
+
+      <div class="input-divs-2">
+
+        <div class="input-div">
+          Gender
+          <input type="text" class="form-input" id="gender" name="gender" formControlName="gender" placeholder="Gender">
+        </div>
+
+        <div class="input-div">
+          Mobile Number
+          <input type="text" class="form-input" id="mobileNumber" name="mobileNumber" formControlName="mobileNumber"
+            placeholder="Mobile Number">
+        </div>
+
+        <div class="input-div">
+          E-mail
+          <input type="text" class="form-input" id="email" name="email" formControlName="email"
+            placeholder="E-mail">
+        </div>
+
+        <div class="input-div">
+          D.O.B 
+          <input type="text" class="form-input" id="dob" name="dob" formControlName="dob"
+            placeholder="Date of Birth">
+        </div>
+      </div>
+
+   
+
+
+      <div class="input-divs-3">
+
+        <div class="input-div">
+          State
+          <input type="text" class="form-input" id="state" name="state" formControlName="state" placeholder="State">
+        </div>
+
+        <div class="input-div">
+          City
+          <input type="city" class="form-input" id="city" name="city" formControlName="city"
+            placeholder="City">
+        </div>
+
+      </div>
+
+      <div class="input-divs-4">
+
+        <div class="input-div">
+          Profession
+          <input type="text" class="form-input" id="profession" name="profession" formControlName="profession" placeholder="Profession">
+        </div>
+
+        <div class="input-div">
+          Category
+          <input type="text" class="form-input" id="category" name="category" formControlName="category"
+            placeholder="Category ">
+        </div>
+
+      </div>
+
+
+      <div class="input-divs-5">
+
+        <div class="input-div">
+          PAN No.
+          <input type="text" class="form-input" id="panNo" name="panNo" formControlName="panNo" placeholder="Pan Number">
+        </div>
+
+        <div class="input-div">
+          Aadhaar No.
+          <input type="text" class="form-input" id="aadhaarNo" name="aadhaarNo" formControlName="aadhaarNo"
+            placeholder="Aadhaar Number">
+        </div>
+
+      </div>
+
+
+      <div class="input-divs-6">
+
+        <div class="input-div">
+
+          Education Qualification
+          <input type="text" class="form-input" id="education" name="education" formControlName="education" placeholder="Education">
+        </div>
+
+        <div class="input-div">
+          Degree
+          <input type="text" class="form-input" id="degree" name="degree" formControlName="degree"
+            placeholder="degree">
+        </div>
+
+      </div>
+
+
+      <div class="input-divs-7">
+
+        <div class="input-div">
+          UniversityName
+          <input type="text" class="form-input" id="university" name="university" formControlName="university" placeholder="university">
+        </div>
+      </div>
+
+
+      
+    <div class="input-field-div" >
+      <div class="button-div">
+        <button (click)="addInfo(isEdit)" class="form-button" >ADD</button>
+      </div>
+
+      <!-- <div class="button-div" *ngIf="isEdit">
+        <button (click)="editInfo()" class="form-button" >ADDD</button>
+      </div> -->
+      
+    </div>
+
+
+    </div>
+
+    <!-- </div> -->
+
+
+    <!-- <div class="error-msg" *ngIf="(EmployeeAddForm.get('productName')?.invalid && EmployeeAddForm.get('productName')?.touched)">
+          <div *ngIf="EmployeeAddForm.get('productName')?.errors.required">ProductName is required.</div>
+      </div> -->
+
+
+    <!-- <div class="input-field-div">
+          <div class="label-div">
+              <lable for="productPrice">Product Price</lable>
+          </div>
+          <div class="input-div">
+              <input type="text" class="form-input" id="productPrice" name="productPrice"
+                  formControlName="productPrice">
+          </div>
+      </div> -->
+
+    <!-- <div class="error-msg" *ngIf="(EmployeeAddForm.get('productPrice')?.invalid && EmployeeAddForm.get('productPrice')?.touched)">
+          <div *ngIf="EmployeeAddForm.get('productPrice')?.errors.required">ProductPrice is required.</div>
+      </div> -->
+
+
+
+
+
+    <!-- <div class="input-field-div">
+          <div class="label-div">
+              <lable for="productCategory">Product Category</lable>
+          </div>
+          <div class="input-div">
+              <input type="text" class="form-input" id="productCategory" name="productCategory"
+                  formControlName="productCategory">
+          </div>
+      </div> -->
+
+    <!-- <div class="error-msg" *ngIf="(EmployeeAddForm.get('productCategory')?.invalid && EmployeeAddForm.get('productCategory')?.touched)">
+          <div *ngIf="EmployeeAddForm.get('productCategory')?.errors.required">ProductCategory is required.</div>
+      </div> -->
+
+
+
+
+    <!-- <div class="input-field-div">
+          <div class="label-div">
+              <lable for="productColor">Product Color</lable>
+          </div>
+          <div class="input-div">
+              <input type="text" class="form-input" id="productColor" name="productColor"
+                  formControlName="productColor">
+          </div>
+      </div> -->
+
+    <!-- <div class="error-msg" *ngIf="(EmployeeAddForm.get('productColor')?.invalid && EmployeeAddForm.get('productColor')?.touched)">
+          <div *ngIf="EmployeeAddForm.get('productColor')?.errors.required">ProductColor is required.</div>
+      </div> -->
+
+
+
+
+    <!-- <div class="input-field-div">
+          <div class="label-div">
+              <lable for="productImage">Product Image URL</lable>
+          </div>
+          <div class="input-div">
+              <input type="text" class="form-input" id="productImage" name="productImage"
+                  formControlName="productImage">
+          </div>
+      </div> -->
+
+    <!-- <div class="error-msg" *ngIf="(EmployeeAddForm.get('productImage')?.invalid && EmployeeAddForm.get('productImage')?.touched)">
+          <div *ngIf="EmployeeAddForm.get('productImage')?.errors.required">ProductImage is required.</div>
+      </div> -->
+
+
+
+
+
+
+    <!-- <div class="input-field-div">
+          <div class="label-div">
+              <lable for="productDescription">Product Description</lable>
+          </div>
+          <div class="input-div-text">
+              <textarea class="form-input" id="productDescription" name="productDescription"
+                  formControlName="productDescription"> </textarea>
+          </div>
+      </div> -->
+
+    <!-- <div class="error-msg" *ngIf="(EmployeeAddForm.get('productDescription')?.invalid && EmployeeAddForm.get('productDescription')?.touched)">
+          <div *ngIf="EmployeeAddForm.get('productDescription')?.errors.required">ProductDescription is required.</div>
+      </div> -->
+
+
+
+
+
+  </form>
+</div>

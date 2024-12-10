@@ -1,0 +1,29 @@
+.home{
+    width: 85%;
+    /* background-color:brown; */
+    height: 550px
+}
+
+.home-sidebar{
+    width: 15%;
+    /* background-color: blueviolet; */
+    height: 800px;
+}
+
+.container{
+    display: flex;
+    /* background-color: rgb(125, 117, 117); */
+}
+
+.home-navbar{
+
+    width: 110%;
+    /* background-color:aqua; */
+    height: 90px
+}
+
+.components{
+    background-color: #e1e1e1;
+    padding-left: 10px;
+    /* padding-right: 10px; */
+}
